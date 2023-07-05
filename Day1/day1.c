@@ -1,6 +1,9 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
 int* twoSum(int* nums, int numsSize, int target, int* returnSize){
 // printf()
 for(int i= 0;i < numsSize;i++){
@@ -24,4 +27,5 @@ for(int i= 0;i < numsSize;i++){
 }
 *returnSize = 2;
 return 0;
+}
 }
